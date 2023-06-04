@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link href="https://cdn.tailwindcss.com" rel="stylesheet">
+</head>
+<body>
+	<!-- navbar starts here -->
+
+	<div class="container">
+		<div class="navbar">
+			<nav class="shadow-md">
+				<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+					<div class="flex items-center justify-between h-16">
+						<!-- Logo -->
+						<div class="logo">
+							<img class="h-16" src="images/logo.png" alt="Logo" />
+						</div>
+						<!-- Navbar items -->
+						<div class="hidden md:block">
+							<div class="ml-10 flex items-baseline space-x-10">
+								<a href="#" class="text-gray-600 px-3 py-2 rounded-md text-lg font-normal">About Us</a>
+								<a href="#" class="text-gray-600 px-3 py-2 rounded-md text-lg font-normal">Recruitment Solutions</a>
+								<a href="#" class="text-gray-600 px-3 py-2 rounded-md text-lg font-normal">Login</a>
+								<a href="#" class="text-red-600 px-3 py-2 rounded-md text-lg font-normal">Register</a>
+							</div>
+						</div>
+						<!-- Mobile Navbar -->
+						<div class="md:hidden">
+							<button class="hamburger-menu">
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<div class="main-container">
+			<div class="flex flex-col md:flex-row">
+				<div class="flex-1 p-4">
+					<img src="images/image1.png" alt="Image" />
+				</div>
+				<div class="flex-1 p-4">
+					<div class="heading text-center font-semibold mt-20">
+						<h1 class="text-4xl mb-4">Log in</h1>
+						<p class="text-lg font-normal">Welcome back to TopGraduates.</p>
+						<p class="text-lg font-normal">Log in to access your profile and account!</p>
+					</div>
+
+					<div class="form w-full mt-4">
+						<div class="p-4 flex justify-center items-center h-full">
+							<form class="w-full max-w-sm">
+								<div class="mb-4">
+									<label class="block text-gray-700 text-lg font-normal mb-2" for="email">Email Address:</label>
+									<input class="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" type="email" id="email" name="email" placeholder="name@domain.com" />
+								</div>
+								<div class="mb-4">
+									<label class="block text-gray-700 text-lg font-normal mb-2" for="password">Password:</label>
+									<input class="w-full px-4 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400" type="password" id="password" name="password" placeholder="Password" />
+								</div>
+
+								<div class="checkBtn flex flex-wrap">
+									<!-- <div class="flex items-center mb-4">
+											<input class="mr-2 leading-tight p-6" type="checkbox" id="remember" name="remember" />
+											<label class="text-sm" for="remember">Remember me</label>
+										</div> -->
+
+									<div class="mb-16 mx-auto">
+										<a class="text-black-500 text-lg underline font-normal" href="#">Forgot password?</a>
+									</div>
+								</div>
+								<button class="bg-pink-500 mx-4 md:mx-28 hover:bg-blue-700 w-full md:w-5/12 text-white font-bold py-2 px-4 rounded" type="submit">Login</button>
+								<p class="text-center mt-4 text-lg">Don't have an account?<span class="ml-3 text-pink-500"><a href="register.html">Register</a></span></p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer text-center p-2 mb-5">
+				<p>Top Graduates 2020 | Contact Us | Privacy Policy | Terms and Conditions</p>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
