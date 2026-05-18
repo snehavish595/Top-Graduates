@@ -4,8 +4,17 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="TopGraduates helps employers hire top graduate talent, interns, apprentices, and students.">
+<meta name="keywords" content="graduate jobs, internships, recruitment platform, employer dashboard, hiring graduates">
+<meta property="og:title" content="TopGraduates Recruitment Platform">
+<meta property="og:description" content="Hire graduates and interns faster.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/preview.png">
+<meta name="theme-color" content="#7c3aed">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<title>Document</title>
-	<link href="https://cdn.tailwindcss.com" rel="stylesheet">
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </head>
 <body>
 	<!-- navbar starts here -->
@@ -24,8 +33,8 @@
 							<div class="ml-10 flex items-baseline space-x-10">
 								<a href="#" class="text-gray-600 px-3 py-2 rounded-md text-lg font-normal">About Us</a>
 								<a href="#" class="text-gray-600 px-3 py-2 rounded-md text-lg font-normal">Recruitment Solutions</a>
-								<a href="#" class="text-gray-600 px-3 py-2 rounded-md text-lg font-normal">Login</a>
-								<a href="#" class="text-red-600 px-3 py-2 rounded-md text-lg font-normal">Register</a>
+								<a href="login.html" class="text-gray-600 px-3 py-2 rounded-md text-lg font-normal">Login</a>
+								<a href="register.html" class="text-red-600 px-3 py-2 rounded-md text-lg font-normal">Register</a>
 							</div>
 						</div>
 						<!-- Mobile Navbar -->
@@ -75,7 +84,7 @@
 										<a class="text-black-500 text-lg underline font-normal" href="#">Forgot password?</a>
 									</div>
 								</div>
-								<button class="bg-pink-500 mx-4 md:mx-28 hover:bg-blue-700 w-full md:w-5/12 text-white font-bold py-2 px-4 rounded" type="submit">Login</button>
+								<button class="bg-pink-500 mx-4 md:mx-auto hover:bg-blue-700 w-full md:w-5/12 text-white font-bold py-2 px-4 rounded" type="submit">Login</button>
 								<p class="text-center mt-4 text-lg">Don't have an account?<span class="ml-3 text-pink-500"><a href="register.html">Register</a></span></p>
 							</form>
 						</div>
@@ -90,6 +99,23 @@
 			</div>
 		</footer>
 	</div>
+
+
+
+<script>
+const form = document.querySelector('form');
+
+form.addEventListener('submit', (e) => {
+  const password = document.querySelector('#password').value;
+
+  const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&]).{8,}$/;
+
+  if (!regex.test(password)) {
+    e.preventDefault();
+    alert('Password must contain:\n- 8 characters\n- 1 number\n- 1 special character');
+  }
+});
+</script>
 
 	<script src="https://cdn.tailwindcss.com"></script>
 </body>
